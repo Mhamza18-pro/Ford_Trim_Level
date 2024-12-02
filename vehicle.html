@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Information</title>
+    <link rel="stylesheet" href="vehicle.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="https://cdn2.iconfinder.com/data/icons/navigation-set-arrows-part-two/32/Arrow_Left-512.png" alt="menu" class="menu-icon"></a>
+        <span class="header-title" style="text-align: center; width: 105px; height: 53px;"><img src="//www.ford.com/etc/designs/brand_ford/brand/skin/ford/img/bri-icons/Ford-logo.svg"/></span>
+
+        <!-- <span class="header-title">Vehicle Information</span> -->
+        <a href="user.html"><img src="https://img.icons8.com/?size=100&id=43942&format=png&color=000000" alt="User Icon" class="user-icon"></a>
+    </header>
+    <h1 style="text-align:center">Chosen Vehicle Details</h1>
+    <main>
+        <section class="vehicle-info">
+            <h2 id="vehicleTitle"></h2>
+            <img id="vehicleImage" src="" alt="Vehicle Image" class="vehicle-image">
+            <select id="trimSelector" class="vehicle-select">
+                <option value="2024-Ford-Mustang">2024 Ford Mustang</option>
+                <option value="2024-Ford-Bronco-Sport">2024 Ford Bronco Sport</option>
+                <option value="2024-Ford-Bronco">2024 Ford Bronco</option>
+                <option value="2024-Ford-Explorer">2024 Ford Explorer</option>
+                <option value="2024-Ford-Edge">2024 Ford Edge</option>
+                <option value="2024-Ford-Mustang-Mach-E">2024 Ford Mustang Mach-E</option>
+                <option value="2024-Ford-Expedition">2024 Ford Expedition</option>
+                <option value="2024-Ford-F-150">2024 Ford F-150</option>
+                <option value="2024-Ford-Super-Duty">2024 Ford Super Duty</option>
+                <option value="2024-Ford-F-150-Lightning">2024 Ford F-150 Lightning</option>
+                <option value="2024-Ford-Transit">2024 Ford Transit</option>
+                <option value="2024-Ford-Ranger">2024 Ford Ranger</option>
+                <!-- Add other options as needed -->
+            </select>
+            <button id="compareButton" class="btn">Compare This Vehicle</button>
+        </section>
+        <section class="vehicle-details">
+            <h3 style="padding-left: 30px;">General Information</h3>
+            <ul>
+                <li id="TrimLevel">Trim Level:</li>
+                <li id="startingprice">Starting Price:</li>
+                <li id="engine">Engine:</li>
+                <li id="Horsepower">Horsepower:</li>
+                <li id="torque">Torque:</li>
+            </ul>
+        </section>
+    </main>
+    <script src="VehicleInformation.js"></script>
+</body>
+</html>
