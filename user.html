@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <h1>Login:<h1>
+    <label for="userEmail">Email: </label>
+    <input type="text" placeholder="johndoe@mail.com" name="userEmail" id="userEmail"/>
+    <br>
+    <label for="userPass">Password: </label>
+    <input type="text" placeholder="password123" name="userPass" id="userPass"/>
+    <br>
+    <button type="submit" id="signOn" onclick="signOnButton()">Sign on</button>
+    <script>
+        function signOnButton() {
+            const userMail = document.getElementById("userEmail").value;
+            const userPass = document.getElementById("userPass").value;
+
+            alert(userMail);
+            alert(userPass);
+
+            if(userMail == "Group3@gmail.com" && userPass == "Springboot") {
+                alert("Sign on success");
+            } else {
+                alert("Ahhhh intruder!!!!");
+            }
+        }   
+    </script>
+</body>
+</html>
